@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Ambulance at night on a city street",
+      "imageUrl": "https://images.unsplash.com/photo-1623261887327-c1d2d2ad0137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhbWJ1bGFuY2UlMjBuaWdodHxlbnwwfHx8fDE3NjYyNTA1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ambulance night"
+    },
+    {
+      "id": "map-user",
+      "description": "Map showing a user's current location in a city",
+      "imageUrl": "https://images.unsplash.com/photo-1717700299588-ee73dc7de1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXAlMjBjaXR5fGVufDB8fHx8MTc2NjI1MDUyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map city"
+    },
+    {
+      "id": "map-admin",
+      "description": "Map showing multiple alert locations in a city",
+      "imageUrl": "https://images.unsplash.com/photo-1736117705737-28851abf2860?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXAlMjBjaXR5JTIwYWxlcnRzfGVufDB8fHx8MTc2NjI1MDUyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map city alerts"
+    },
+    {
+      "id": "avatar-user",
+      "description": "Portrait of a user",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYxNzYyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "avatar-alice",
+      "description": "Portrait of a woman named Alice",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjE4MTQ3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "avatar-bob",
+      "description": "Portrait of a man named Bob",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYxNTY0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "avatar-charlie",
+      "description": "Portrait of a person named Charlie",
+      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYxNzYyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
 }
