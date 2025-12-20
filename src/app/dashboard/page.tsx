@@ -13,7 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import { mockUser } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Bell, Heart, Phone, Shield, User, Car } from "lucide-react";
+import { Bell, Heart, Phone, Shield, User, Car, BarChart, Compass, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { SosButton } from "@/components/SosButton";
@@ -26,7 +26,7 @@ export default function DashboardPage() {
   const handleSimulateAccident = () => {
     toast({
       title: "🚨 Accident Detected!",
-      description: "An alert has been automatically sent to emergency services.",
+      description: "Sudden impact and deceleration detected by vehicle sensors. An alert has been sent.",
       variant: "destructive",
       duration: 5000,
     });
@@ -109,22 +109,41 @@ export default function DashboardPage() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle className="font-headline">System Status</CardTitle>
+                <div className="flex items-center gap-2">
+                    <Shield className="h-6 w-6 text-green-600" />
+                    <CardTitle className="font-headline">Sensor System Status</CardTitle>
+                </div>
               <CardDescription>
-                Simulate an automatic accident detection event.
+                The system is actively monitoring vehicle sensors to detect accidents.
               </CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-col items-center justify-center gap-4">
-              <div className="flex items-center gap-2 text-green-600 font-medium">
-                <Shield className="h-5 w-5" />
-                <span>System Active & Monitoring</span>
-              </div>
-              <p className="text-sm text-muted-foreground text-center">
-                The app is monitoring your vehicle's sensors in the background.
-              </p>
-              <Button variant="destructive" onClick={handleSimulateAccident}>
-                <Bell className="mr-2 h-4 w-4" /> Simulate Accident Detection
-              </Button>
+            <CardContent className="space-y-6">
+                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div className="flex flex-col items-center gap-2 p-4 bg-secondary rounded-lg">
+                        <BarChart className="h-8 w-8 text-primary"/>
+                        <p className="font-semibold">Accelerometer</p>
+                        <p className="text-xs text-green-600 font-medium">Active</p>
+                    </div>
+                    <div className="flex flex-col items-center gap-2 p-4 bg-secondary rounded-lg">
+                        <Zap className="h-8 w-8 text-primary"/>
+                        <p className="font-semibold">Gyroscope</p>
+                        <p className="text-xs text-green-600 font-medium">Active</p>
+                    </div>
+                    <div className="flex flex-col items-center gap-2 p-4 bg-secondary rounded-lg">
+                        <Compass className="h-8 w-8 text-primary"/>
+                        <p className="font-semibold">GPS</p>
+                        <p className="text-xs text-green-600 font-medium">Active</p>
+                    </div>
+                 </div>
+                 <Separator />
+                 <div className="flex flex-col items-center justify-center gap-2">
+                     <p className="text-sm text-muted-foreground text-center">
+                        You can simulate an automatic accident detection event for testing.
+                    </p>
+                    <Button variant="destructive" onClick={handleSimulateAccident}>
+                        <Bell className="mr-2 h-4 w-4" /> Simulate Accident Detection
+                    </Button>
+                 </div>
             </CardContent>
           </Card>
         </div>

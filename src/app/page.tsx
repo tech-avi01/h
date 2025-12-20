@@ -12,7 +12,7 @@ export default function Home() {
     {
       icon: <Siren className="h-10 w-10 text-primary" />,
       title: "Automatic Detection",
-      description: "Vehicle sensors detect accidents and trigger alerts automatically.",
+      description: "Advanced vehicle sensors detect accidents and trigger alerts automatically.",
     },
     {
       icon: <HeartPulse className="h-10 w-10 text-primary" />,
